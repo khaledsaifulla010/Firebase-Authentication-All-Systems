@@ -12,14 +12,6 @@ const Home = () => {
             >
                 Google Sign In
             </NavLink>
-            <NavLink
-                to="/googleSignIn"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : "bg-purple-500 text-white p-2 rounded-xl "
-                }
-            >
-                Google Sign In
-            </NavLink>
             
         </div>
     );
