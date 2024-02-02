@@ -1,18 +1,26 @@
 import { NavLink } from "react-router-dom";
 const Home = () => {
     return (
-        <div className="flex items-center justify-end mt-12 mr-8  gap-4 font-bold">
-            
+        <div className="flex items-center justify-center mt-12   gap-4 font-bold">
+
 
             <NavLink
                 to="/googleSignIn"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : "bg-purple-500 text-white p-2 rounded-xl "
+                className={() =>
+                    " text-white bg-purple-600 p-2 rounded-xl "
                 }
             >
-                Google Sign In
+                Google Sign In 
             </NavLink>
-            
+            <NavLink
+                to="signUp"
+                className={() =>
+                     " text-white bg-purple-600 p-2 rounded-xl "
+                }
+            >
+                Sign Up
+            </NavLink>
+
         </div>
     );
 };

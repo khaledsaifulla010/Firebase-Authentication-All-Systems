@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import GoogleSignIn from './Components/GoogleSignIn/GoogleSignIn';
 import MainLayOut from './Components/Layouts/MainLayOut';
+import SignUp from './Components/SignUp/SignUp';
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path:'/googleSignIn',
         element: <GoogleSignIn></GoogleSignIn>
+      },
+      {
+        path:'/signUp',
+        element: <SignUp></SignUp>
       }
     ]
   },
