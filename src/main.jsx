@@ -5,13 +5,21 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Components/Home/Home';
+import GoogleSignIn from './Components/GoogleSignIn/GoogleSignIn';
+import MainLayOut from './Components/Layouts/MainLayOut';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <MainLayOut></MainLayOut>,
+    children: [
+      
+      {
+        path:'/googleSignIn',
+        element: <GoogleSignIn></GoogleSignIn>
+      }
+    ]
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
